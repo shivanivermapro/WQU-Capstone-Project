@@ -1,6 +1,14 @@
+pip install arch
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from sklearn.decomposition import PCA
 from arch import arch_model
+from sklearn.impute import SimpleImputer
+from statsmodels.tsa.vector_ar.var_model import VAR
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
+import warnings
+
+warnings.filterwarnings("ignore")
